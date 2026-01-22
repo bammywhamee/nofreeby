@@ -3,7 +3,13 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  background-color: #151515;
+}
+
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 .navbar {
