@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Watch Movie - dihmastermovies</title>
+    <style>
+        .watch-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            padding: 50px 20px;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .watch-player {
+            width: 100%;
+            max-width: 900px;
+            aspect-ratio: 16 / 9;
+            background-color: #0f0f0f;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #4dbf00;
+            border: 2px solid #4dbf00;
+        }
+
+        .watch-info {
+            text-align: center;
+            color: white;
+            max-width: 900px;
+        }
+
+        .watch-info h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #4dbf00;
+        }
+
+        .watch-info p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #4dbf00;
+            color: #151515;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #3a8f00;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">dihmastermovies</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="watch-container">
+                <div class="watch-player">
+                    🎬 Movie Player - Video Content Coming Soon
+                </div>
+                <div class="watch-info">
+                    <h1>Now Playing</h1>
+                    <p>Your selected movie is ready to watch. The video player is loading...</p>
+                    <a href="index.html" class="back-button">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
